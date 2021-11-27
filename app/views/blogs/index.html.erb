@@ -1,0 +1,11 @@
+<h2>kazu blog</h2>
+<table class="table">
+<% @blogs.each do |blog| %>
+    <thead class="table-light">
+        <%=blog.title  %>
+    </thead>
+    <tbody>
+        <%= blog.content %>
+    </tbody>
+<%end %>
+</table>
