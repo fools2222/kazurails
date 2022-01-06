@@ -1,0 +1,65 @@
+<h1>引越匠　簡単見積もりシュミレーター</h1>
+<div class="container">
+    <div id="mitsumori-js">
+  <table class="mitsumori-js-tbl">
+    <thead><th>項目</th><th>数量</th><th>金額</th></thead>
+    <tbody>
+      <tr id="mitsumori-js-item-5" class="mitsumori-js-item" data-itemnum="5">
+        <td class="item-name">引越し</td>
+        <td class="item-quantity">
+          <select class="select-quantity" data-itemnum="5">
+            <option value=""></option>
+            <option value="21780">単身</option>
+            <option value="35000">2人家族</option>
+            <option value="50000">3人家族</option>
+            <option value="70000">4人家族</option>
+            <option value="90000">5人家族</option>
+          </select>
+        </td>
+        <td class="item-price">￥<span></span></td>
+      </tr>
+      <tr id="mitsumori-js-item-6" class="mitsumori-js-item" data-itemnum="6">
+        <td class="item-name">不良品回収</td>
+        <td class="item-quantity">
+          <select class="select-quantity" data-itemnum="6">
+            <option value=""></option>
+            <option value="20000">軽トラック1台</option>
+            <option value="40000">軽トラック2台</option>
+            <option value="60000">軽トラック3台</option>
+          </select>
+        </td>
+        <td class="item-price">￥<span></span></td>
+      </tr>
+      <tr id="mitsumori-js-item-7" class="mitsumori-js-item" data-itemnum="7">
+        <td class="item-name">エアコン</td>
+        <td class="item-quantity">
+          <select class="select-quantity" data-itemnum="7">
+            <option value=""></option>
+            <option value="8000">1台</option>
+            <option value="20000">2台</option>
+            <option value="24000">3台</option>
+            <option value="32000">4台</option>
+          </select>
+        </td>
+        <td class="item-price">￥<span></span></td>
+      </tr>
+      <tr id="mitsumori-js-item-8" class="mitsumori-js-item" data-itemnum="8">
+        <td class="item-name">エアコン工事</td>
+        <td class="item-quantity">
+          <label><input type="checkbox" class="check-quantity" data-itemnum="8" value="17820">配管４mパック</label>
+          <label><input type="checkbox" class="check-quantity" data-itemnum="8" value="20000">ユニック</label>
+        </td>
+        <td class="item-price">￥<span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="mitsumori-js-total-tbl" data-taxflg="1">
+    <tbody>
+      <tr><th>小計</th><td>￥<span id="mitsumori-js-subtotal"></span></td></tr>
+      <tr><th>消費税（<span id="mitsumori-js-tax-rate">10</span>%）</th><td>￥<span id="mitsumori-js-tax"></span></td></tr>
+      <tr><th>合計金額</th><td>￥<span id="mitsumori-js-total"></span></td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
