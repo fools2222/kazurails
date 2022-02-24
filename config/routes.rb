@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
-  
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
-  root "mainpages#index"
-
-  resources :mainpages do
-    resources :questions do 
-      resources :answers
-    end
-  end
+  root "homes#index"
+  get "homes/contents" => "homes#contents"
+  resources :homes 
+  resources :infomations 
+ 
 end
