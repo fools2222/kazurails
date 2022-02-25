@@ -1,8 +1,8 @@
 
 
-<%= form_for @inquiry do |f| %>
+<%= form_with @inquiry do |f| %>
   <div class="form-group">
-    <%= f.label :name, 'お客様のお名前' %>
+    <%= f.label :name, 'お名前' %>
     <%= f.text_field :name, class: 'form-control' %>
   </div>
   <div class="form-group">
@@ -10,5 +10,5 @@
     <%= f.text_area :message, class: 'form-control' %>
   </div>
     
-  <%= f.submit '保存', class: 'btn btn-primary' %>
+  <%= f.submit '送信', class: 'btn btn-primary' %>
 <% end %>
