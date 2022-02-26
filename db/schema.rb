@@ -10,18 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_24_132615) do
+ActiveRecord::Schema.define(version: 2022_02_25_135223) do
 
-  create_table "homes", force: :cascade do |t|
-    t.text "name"
-    t.string "youtube_url"
+  create_table "boards", force: :cascade do |t|
+    t.string "name"
+    t.string "title"
+    t.text "body"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "inquiries", force: :cascade do |t|
-    t.string "name"
-    t.string "message"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.text "message", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

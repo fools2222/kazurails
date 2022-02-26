@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root "homes#index"
-  get "homes/contents" => "homes#contents"
+  
   resources :homes 
- 
+  resources :inquiries,only: [:new,:create]
+  post "inquiries/confirm",to: "inquiries#confirm"
+  post "inquiries/back",to: "inquiries#back"
  
 end

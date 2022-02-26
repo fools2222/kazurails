@@ -5,7 +5,7 @@ class InquiryMailer < ApplicationMailer
         mail(
             from: 'system@example.com',
             to:   ENV["URL"],
-            subject: 'お問い合わせ通知'+ @contact.subject_i18n
+            subject: 'お問い合わせ通知'
         )
     end
     
