@@ -1,0 +1,8 @@
+
+<% if @ruby.present? %>
+    <h1><%= @ruby[:title] %></h1>
+    <%= @ruby[:body].to_s.html_safe %>
+    <%else%>
+    <%= "記事はありません" %>
+<%end%>
+<%= link_to "戻る", root_path %>

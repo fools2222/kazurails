@@ -38,6 +38,7 @@ gem "erb2haml"
 
 gem "dotenv-rails"
 gem "meta-tags"
+gem "httpclient"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -62,6 +63,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem "rspec-rails","~> 3.8"
+  gem "rails-controller-testing"
 end
 
 group :production do 

@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>質問コーナー</h1>
+</div>
+<div class="container">
+    <%= form_with model: @boards do |file| %>
+        <div>
+            <%=file.label :お名前 %><br>
+            <%=file.text_field :name %>
+        </div>
+        <div>
+            <%=file.label :題名 %><br>
+            <%=file.text_field :titile %>
+        </div>
+        <div>
+            <%=file.label :本文 %><br>
+            <%=file.text_area :body %>
+        </div>
+        <br>
+        <div>
+            <%= file.submit %>
+        </div>
+    <%end%>
+</div>

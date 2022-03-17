@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_25_135223) do
+ActiveRecord::Schema.define(version: 2022_02_26_014043) do
+
+  create_table "amazon_searches", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "subject", null: false
+    t.text "body", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "boards", force: :cascade do |t|
     t.string "name"

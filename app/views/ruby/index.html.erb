@@ -1,0 +1,6 @@
+<h1>記事一覧</h1>
+<ul>
+    <% @ruby[:contents].each do |content| %>
+    <li><%= link_to content[:title],show_path(content[:id]) %></li>
+    <%end%>
+</ul>
