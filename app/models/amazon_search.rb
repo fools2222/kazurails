@@ -1,6 +1,6 @@
 
 class AmazonSearch < ActiveRecord::Base
-    require "selenium-webdriver"
+    # require "selenium-webdriver"
     attr_accessor :list
     $list = []
     def sec
