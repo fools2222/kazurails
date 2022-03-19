@@ -15,7 +15,7 @@ class AmazonSearch < ActiveRecord::Base
             $list << o.find_element(:class,"large").text
             puts $list
         end
-        sleep 1
+        d.quit
     end
 end
 
