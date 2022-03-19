@@ -1,4 +1,4 @@
-
+require "selenium-webdriver"
 class AmazonSearch < ActiveRecord::Base
 
     $list = []
