@@ -1,5 +1,5 @@
 class AmazonSearchController < ApplicationController
-   
+   require "selenium-webdriver"
     def index
         @amazon = AmazonSearch.all
     end
