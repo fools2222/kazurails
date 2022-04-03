@@ -4,13 +4,9 @@ class AmazonSearchController < ApplicationController
         @amazon = AmazonSearch.all
     end
     def new
-       @amazon = AmazonSearch.new
-       @sec = @amazon.sec
+        @amazon = AmazonSearch.new
+        scraype = Scraype.new
+        @sec = scraype.sec
+        render :index
     end
-    def show
-        @amazon = AmazonSearch.find(params[:id])
-    end
-    
-
-
 end

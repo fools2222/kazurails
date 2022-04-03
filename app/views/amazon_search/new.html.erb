@@ -1,10 +1,8 @@
-
-   <div class="container">
-      <h1>住宅情報スクレイピング結果</h1>
-      <% $list.uniq!.each do |o| %>
-         <ul>
-            <li><%=o%></li>
-         </ul>
-      <%end%>
-   </div>
-   
+<div class="container">
+        <h1>住宅情報スクレイピング結果</h1>
+        <%@amazon.each do |item|%>
+            <p><%=item.title%></p>
+            <p><%=item.subject%></p>
+            <p><%=item.body%></p>
+        <%end%>
+    </div>
