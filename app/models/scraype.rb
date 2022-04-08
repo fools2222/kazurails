@@ -4,6 +4,7 @@ class Scraype
         options.headless!
         d = Selenium::WebDriver.for :chrome,options: options
         d.get("https://www.gaccom.jp/schools-22163/realestate.html")
+        sleep 5
         
         sections = d.find_element(:id,"realestate_section").find_elements(:class,"side-corner-tag")
         sections.each do |o|

@@ -1,12 +1,13 @@
 class AmazonSearchController < ApplicationController
-   require "selenium-webdriver"
     def index
         @amazon = AmazonSearch.all
     end
     def new
-        @amazon = AmazonSearch.new
+        @amazon = AmazonSearch.last(10)
         scraype = Scraype.new
         @sec = scraype.sec
-        render :index
+    end
+    def show 
+        @amazon = AmazonSearch.first(10)
     end
 end
