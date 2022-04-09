@@ -1,19 +1,30 @@
 <header class="shadow-sm bg-dark text-white ">
   <h1 class="p-4">kazutter</h1>
-  <p class="p-3">スクレイピング　サイト検索</p>
+  <p class="p-3">スクレイピング　結果</p>
 </header>
 
 <main class="mt-3">
-    <button class="btn btn-primary p-3">
-        <%=link_to "スクレイピング開始",new_amazon_search_path,class: "text-white"%>
-    </button>
     <div class="container mt-5">
-        <h2>住宅情報スクレイピング結果</h2>
-        <%@amazon.each do |item|%>
-            <p><%=item.title%></p>
-            <p><%=item.subject%></p>
-            <p><%=item.body%></p>
-        <%end%>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">物件名</th>
+                <th scope="col">住所</th>
+                <th scope="col">金額</th>
+            </tr>
+            </thead>
+                <%@amazon.each do |item|%>
+                <tbody>
+                <tr>
+                    <th scopw="row"><%=item.id%></th>
+                    <td><%=item.title%></td>
+                    <td><%=item.subject%></td>
+                    <td><%=item.body%></td>
+                    </tr>
+                </tbody>
+                <%end%>
+        </table>
     </div>
 </main>
 
