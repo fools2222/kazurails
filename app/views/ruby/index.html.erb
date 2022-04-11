@@ -1,6 +1,6 @@
 <h1>記事一覧</h1>
 <ul>
-    <% @ruby[:contents].each do |content| %>
-    <li><%= link_to content[:title],show_path(content[:id]) %></li>
+    <% @ruby[:contents].each do |ruby| %>
+    <li><%= link_to ruby[:title],ruby_path(ruby[:id]) %></li>
     <%end%>
 </ul>

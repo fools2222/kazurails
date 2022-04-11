@@ -1,4 +1,7 @@
 class AmazonSearch < ActiveRecord::Base
+    
+end
+class Scraiping
     def self.sec
         options = Selenium::WebDriver::Chrome::Options.new
         options.headless!

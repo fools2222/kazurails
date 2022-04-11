@@ -1,23 +1,21 @@
-<div class="container">
-    <h1>質問コーナー</h1>
+<div class="d-flex align-items-center">
+  <h1>掲示板作成</h1>
+  <div class="ml-auto boards__linkBox">
+    <a href="/boards" class="btn btn-outline-dark">掲示板一覧</a>
+  </div>
 </div>
-<div class="container">
-    <%= form_with model: @boards do |file| %>
-        <div>
-            <%=file.label :お名前 %><br>
-            <%=file.text_field :name %>
-        </div>
-        <div>
-            <%=file.label :題名 %><br>
-            <%=file.text_field :titile %>
-        </div>
-        <div>
-            <%=file.label :本文 %><br>
-            <%=file.text_area :body %>
-        </div>
-        <br>
-        <div>
-            <%= file.submit %>
-        </div>
-    <%end%>
-</div>
+<form>
+  <div class="form-group">
+    <label for="name">名前</label>
+    <input id="name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="title">タイトル</label>
+    <input id="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="body">本文</label>
+    <textarea id="body" class="form-control" rows="10"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">保存</button>
+</form>

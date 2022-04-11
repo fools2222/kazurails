@@ -5,4 +5,8 @@ class AmazonSearchController < ApplicationController
     def new
         @amazon = AmazonSearch.last(10)
     end
+    def run
+        @scraype = Scraiping.sec
+        render :new
+    end
 end

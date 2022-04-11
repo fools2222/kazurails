@@ -5,26 +5,9 @@
 
 <main class="mt-3">
     <div class="container mt-5">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">物件名</th>
-                <th scope="col">住所</th>
-                <th scope="col">金額</th>
-            </tr>
-            </thead>
-                <%@amazon.each do |item|%>
-                <tbody>
-                <tr>
-                    <th scopw="row"><%=item.id%></th>
-                    <td><%=item.title%></td>
-                    <td><%=item.subject%></td>
-                    <td><%=item.body%></td>
-                    </tr>
-                </tbody>
-                <%end%>
-        </table>
+        <button class="btn btn-primary">
+            <%=link_to "スクレイピング開始",amazon_search_run_path,class: "text-white" %>
+        </button>
     </div>
 </main>
 
