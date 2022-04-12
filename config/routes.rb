@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   root "homes#index"
   
   resources :homes 
@@ -8,4 +9,5 @@ Rails.application.routes.draw do
   post "inquiries/confirm",to: "inquiries#confirm"
   post "inquiries/back",to: "inquiries#back"
   get "amazon_search/run",to: "amazon_search#run"
+  post "/callback",to: "linebot#callback"
 end

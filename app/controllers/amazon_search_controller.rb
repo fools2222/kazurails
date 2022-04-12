@@ -3,10 +3,12 @@ class AmazonSearchController < ApplicationController
         @amazon = AmazonSearch.all
     end
     def new
-        @amazon = AmazonSearch.last(10)
+        @amazon = AmazonSearch.all
+        @list = $list
     end
     def run
-        @scraype = AmazonSearch.sec
+        @scraype = AmazonSearch.new
+        @scraype.run
         render :new
     end
 end

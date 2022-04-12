@@ -40,6 +40,8 @@ gem "dotenv-rails"
 gem "meta-tags"
 gem "httpclient"
 gem "selenium-webdriver"
+gem "mechanize"
+gem "line-bot-api"
 
 
 group :development, :test do
