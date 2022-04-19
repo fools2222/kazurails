@@ -1,7 +1,8 @@
 require "test_helper"
 
 class HomesControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+   test "root_test" do
+      get root_path
+      assert true
+   end
 end

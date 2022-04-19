@@ -3,12 +3,6 @@ class AmazonSearchController < ApplicationController
         @amazon = AmazonSearch.all
     end
     def new
-        @amazon = AmazonSearch.all
-        @list = $list
-    end
-    def run
-        @scraype = AmazonSearch.new
-        @scraype.run
-        render :new
+        @amazon = AmazonSearch.new
     end
 end

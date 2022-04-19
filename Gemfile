@@ -29,17 +29,11 @@ gem "carrierwave"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
 gem "bootstrap","~>4.1.1"
 gem "jquery-rails","~>4.3.1"
-
-gem "haml-rails"
-gem "erb2haml"
-
 gem "dotenv-rails"
 gem "meta-tags"
 gem "httpclient"
-gem "selenium-webdriver"
 gem "mechanize"
 gem "line-bot-api"
 
@@ -49,6 +43,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3', '~> 1.4'
   gem 'rspec-rails', '~> 5.0.0'
+  gem "guard"
 end
 
 group :development do

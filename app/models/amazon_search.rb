@@ -4,8 +4,8 @@ class AmazonSearch < ActiveRecord::Base
         $list = []
     end
     def self.run
-        @d.get("https://www.gaccom.jp/schools-22163/realestate.html")
-        title = @d.search("h5 > .title-text").text
+        page = @d.get("https://www.gaccom.jp/schools-22163/realestate.html")
+        title = page.search("h5 > .title-text").text
         title.each do |o|
             $list << o.inner_text
             puts $list

@@ -1,3 +1,0 @@
-class RubyController < ApplicationController
-  
-end
