@@ -34,9 +34,10 @@ gem "jquery-rails","~>4.3.1"
 gem "dotenv-rails"
 gem "meta-tags"
 gem "httpclient"
-gem "mechanize"
 gem "line-bot-api"
-
+gem "devise"
+gem 'contentful'
+gem 'redcarpet'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -60,7 +61,6 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem "rails-controller-testing"
@@ -68,7 +68,6 @@ end
 
 group :production do 
   gem "pg","~>1.1"
-  gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 

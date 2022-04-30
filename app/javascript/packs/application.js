@@ -13,21 +13,11 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
+require("jquery")
+import "bootstrap"
 //= require rails-ujs
 
 
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-$(function() {
-    $('.hamburger').click(function() {
-        $(this).toggleClass('active');
- 
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
-        } else {
-            $('.globalMenuSp').removeClass('active');
-        }
-    });
-});

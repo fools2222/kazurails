@@ -1,12 +1,8 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <%= link_to "kazutter","#",id: "logo"%>
-        <nav>
-        <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "home","#" %></li>
-            <li><%= link_to "help","#" %></li>
-            <li><%= link_to "log in","#" %></li>
-        </ul>
-        </nav>
     </div>
+    <nav class="ml-auto">
+        <%=link_to "sign in", new_admin_registration_path%>
+    </nav>
 </header>

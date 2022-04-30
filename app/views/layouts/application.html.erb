@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= display_meta_tags(default_meta_tags) %>
     <meta name="google-site-verification" content="ESOkUjo-tHqMRiE4qf0KtsGxlW3JkTyCE7JqzSNlMos" />
    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,12 +15,13 @@
       <div class="container">
         <%= render "layouts/header" %>
       </div>
-      <main class="container">
-       <%= yield %>
-      </main>
+      <div class="container">
+        <main>
+          <%= yield %>
+        </main>
+      </div>
       <div class="container">
         <%= render "layouts/footer"%>
       </div>
-      <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
