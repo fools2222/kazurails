@@ -43,7 +43,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3', '~> 1.4'
-  gem 'rspec-rails', '~> 5.0.0'
   gem "guard"
 end
 
@@ -63,8 +62,9 @@ group :test do
   gem 'capybara', '>= 3.26'
   # Easy installation and use of web drivers to run system tests with browsers
   gem "rails-controller-testing"
+  gem 'webdrivers'
+  gem 'selenium-webdriver'
 end
-
 group :production do 
   gem "pg","~>1.1"
 
