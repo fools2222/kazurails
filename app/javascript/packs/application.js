@@ -4,7 +4,7 @@
 // that code so it'll be compiled.
 
 
-require("jquery")
+require("./node_modules/jquery")
 import "bootstrap"
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
