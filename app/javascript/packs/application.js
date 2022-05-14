@@ -13,10 +13,11 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+require("jquery")
 import "bootstrap"
 //= require rails-ujs
 
-
-//= require jquery3
+//= require turbolinks
+//= require jquery
 //= require popper
 //= require bootstrap-sprockets
