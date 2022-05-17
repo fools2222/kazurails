@@ -31,13 +31,11 @@ gem "carrierwave"
 gem 'bootsnap', '>= 1.4.4', require: false
 gem "bootstrap","~>4.1.1"
 gem "jquery-rails","~>4.3.1"
-gem "jquery"
 gem "dotenv-rails"
 gem "meta-tags"
 gem "httpclient"
 gem "line-bot-api"
 gem "devise"
-gem 'contentful'
 gem 'redcarpet'
 
 group :development, :test do
